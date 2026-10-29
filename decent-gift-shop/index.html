@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decent Gift Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,500&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- ===== INTRO ===== -->
+<div id="intro">
+  <div class="glass g1"></div><div class="glass g2"></div>
+  <div class="intro-core">
+    <svg class="logo" viewBox="0 0 120 120" aria-hidden="true">
+      <path class="l1" d="M60 8 L108 36 L108 84 L60 112 L12 84 L12 36 Z"/>
+      <path class="l2" d="M12 36 L60 62 L108 36 M60 62 L60 112"/>
+      <path class="l3" d="M60 8 C40 -2 30 22 60 30 C90 22 80 -2 60 8 Z"/>
+    </svg>
+    <h1 class="words">
+      <span style="--d:2.2s">DECENT</span>
+      <span style="--d:4.4s">GIFT</span>
+      <span style="--d:6.6s">SHOP</span>
+    </h1>
+    <p class="tag">gifts that say it softly</p>
+  </div>
+  <button id="skip">Skip</button>
+</div>
+
+<!-- ===== SITE ===== -->
+<div id="prog"></div><div id="cur"></div><div id="ring"></div><div id="toast"></div>
+<div id="site">
+  <canvas id="hearts"></canvas>
+  <header class="nav">
+    <a href="#top" class="brand">Decent Gift Shop</a>
+    <nav><a href="#shop">Shop</a><a href="#how">How it works</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="hello">Welcome, lovely 💖</p>
+      <h2>Little things,<br>big smiles.</h2>
+      <p class="sub">Teddy bears, perfumes and more, picked with care for <b id="who" class="who">birthdays</b></p>
+      <a class="btn mag" href="#shop">Browse gifts</a>
+      <a class="btn ghost mag" href="#how">How it works</a>
+    </div>
+    <div class="hero-art" id="art">
+      <div class="bubble b1" style="--d:22">🧸</div><div class="bubble b2" style="--d:34">🌸</div>
+      <div class="bubble b3" style="--d:-26">🎀</div><div class="bubble b4" style="--d:-38">💐</div>
+      <div class="bigbear" style="--d:12">🧸</div>
+    </div>
+    <a class="scroll" href="#shop" aria-label="Scroll down"><i></i></a>
+  </section>
+
+  <div class="marq"><div class="track" id="trk"></div></div>
+
+  <section class="cats" id="cats">
+    <button class="cat on" data-c="all">✨ All</button>
+    <button class="cat" data-c="teddy">🧸 Teddy Bears</button>
+    <button class="cat" data-c="perfume">🌷 Perfumes</button>
+    <button class="cat" data-c="vape">💨 Vapes</button>
+  </section>
+
+  <section id="shop">
+    <div class="group" data-g="teddy"><h3 class="rv">Teddy Bears</h3><div class="grid" id="g-teddy"></div></div>
+    <div class="group" data-g="perfume"><h3 class="rv">Perfumes</h3><div class="grid" id="g-perfume"></div></div>
+    <div class="group" data-g="vape"><h3 class="rv">Vapes</h3>
+      <p class="note">18+ only. Valid ID may be asked at pickup or delivery.</p>
+      <div class="grid" id="g-vape"></div></div>
+  </section>
+
+  <section class="how" id="how">
+    <h3 class="rv">Gifting in 3 steps</h3>
+    <div class="steps">
+      <div class="step rv"><em>1</em><b>Pick a gift</b><span>Browse bears, perfumes and more.</span></div>
+      <div class="step rv"><em>2</em><b>Tap Order</b><span>Your pick opens in WhatsApp, ready to send.</span></div>
+      <div class="step rv"><em>3</em><b>We deliver</b><span>Wrapped, noted and at the door.</span></div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="rv"><b data-n="1200">0</b><span>happy gifts sent</span></div>
+    <div class="rv"><b data-n="350">0</b><span>teddy hugs a month</span></div>
+    <div class="rv"><b data-n="98">0</b><span>% smiles on delivery</span></div>
+    <div class="rv"><b data-n="7">0</b><span>days a week open</span></div>
+  </section>
+
+  <section class="about" id="about">
+    <h3 class="rv">Why Decent?</h3>
+    <div class="trio">
+      <div class="rv tilt"><b>🎁 Gift wrapped</b><span>Every order wrapped neatly, free.</span></div>
+      <div class="rv tilt"><b>💌 Custom note</b><span>Add a message for your special one.</span></div>
+      <div class="rv tilt"><b>🚚 Quick delivery</b><span>Fast and careful, right to the door.</span></div>
+    </div>
+  </section>
+
+  <section class="love">
+    <h3 class="rv">Kind words</h3>
+    <div class="trio">
+      <blockquote class="rv tilt"><p>The giant bear arrived wrapped like a dream. She cried happy tears.</p><cite>⭐⭐⭐⭐⭐ Hira</cite></blockquote>
+      <blockquote class="rv tilt"><p>Rose Oud smells expensive and the note was a lovely touch.</p><cite>⭐⭐⭐⭐⭐ Ahmed</cite></blockquote>
+      <blockquote class="rv tilt"><p>Ordered at night, delivered next morning. Super easy on WhatsApp.</p><cite>⭐⭐⭐⭐⭐ Sana</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <h3 class="rv">Quick answers</h3>
+    <details class="rv"><summary>How do I order?</summary><p>Tap Order on any gift. WhatsApp opens with the item filled in, just press send.</p></details>
+    <details class="rv"><summary>Is gift wrapping really free?</summary><p>Yes, every order is wrapped at no extra cost.</p></details>
+    <details class="rv"><summary>Can I add a message?</summary><p>Tell us the note in the chat and we will tuck it in the package.</p></details>
+  </section>
+
+  <footer id="contact">
+    <h3 class="rv">Order on WhatsApp</h3>
+    <a class="btn mag pulse" id="wa-main" href="#">Chat with us</a>
+    <p>Decent Gift Shop · Open daily</p>
+  </footer>
+  <button id="top-btn" aria-label="Back to top">↑</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
